@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "goit-command-project-js",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://matoka02.github.io/goit-command-project-js",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /goit-command-project-js/"
   },
   "repository": {
     "type": "git",
