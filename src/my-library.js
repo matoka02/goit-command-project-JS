@@ -3,7 +3,7 @@ import { onQueueBtn, onWatchedBtn } from './js/btnWatchedQueue';
 import { onSubmitScroll } from './js/onSubmit';
 import { showModal } from './js/film-modal';
 import trailer from './js/film-trailer';
-import { switcher} from './js/switcher';
+// import { switcher} from './js/switcher';
 import { spinner, spinnerRemove } from './js/notifications';
 import { onOpenTeamModal } from './js/team-modal';
 
@@ -25,11 +25,11 @@ export const refs = {
   pagination: document.querySelector('.pagination__container'),
 };
 
-const stickyHeaderMyLibrary = (window.onscroll = function showHeaderMyLibrary() {
+const stickyMyLibrary = (window.onscroll = function showHeaderMyLibrary() {
   if (window.pageYOffset > 200) {
-    refsLibrary.stickyHeaderMyLibrary.classList.add('my-library-header__sticky');
+    refs.stickyHeaderMyLibrary.classList.add('my-library-header__sticky');
   } else {
-    refsLibrary.stickyHeaderMyLibrary.remove('my-library-header__sticky')
+    refs.stickyHeaderMyLibrary.remove('my-library-header__sticky')
   }
 });
 
@@ -48,7 +48,7 @@ refs.pagination.addEventListener('click', onPagination);
 refs.footerLink.addEventListener('click', onOpenTeamModal);
 
 // Початкове завантаження
-onWatched();
+onWatchedBtn();
 
 function onWatched(evt) {
   console.log(evt.target);
