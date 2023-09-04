@@ -10,6 +10,7 @@ let firstPage = null;
 let endPage = null;
 
 export function getPagination(currentPage, lastPage, isLib = false) {
+  console.log(pagination);
   if (!currentPage || lastPage === 1 || lastPage - currentPage < 0) {
     pagination.style = `margin: 0;`;
     pagination.innerHTML = '';
