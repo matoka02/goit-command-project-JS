@@ -1,27 +1,9 @@
-// .team-modal-mask {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   opacity: 1;
-//   transition: 500ms;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.2);
-//   overflow-y: scroll;
-// }
-
-// .team-modal-mask.is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
-
 .team-modal {
   position: fixed;
   left: 50%;
   top: 50%;
   max-width: 1280px;
-  height: 100%;
+  // height: 100%;
   background-color: #ffffff;
   transform: translate(-50%, -50%) scale(0.7);
   overflow-y: scroll;
@@ -186,106 +168,13 @@
 .people__card {
   min-width: 250px;
 }
-.people__card1 {
-  background: url('https://github.com//ihorchub.png') center center no-repeat;
+
+.people__card--wrapper {
+  background: url('../images/github-avatar.png') center center no-repeat;
   background-size: 250px;
   &:hover {
-    background: url('https://github.com//ihorchub.png') center no-repeat;
+    background: url('../images/github-avatar.png') center no-repeat;
     background-size: 300px;
   }
 }
-.people__card2 {
-  background: url('https://github.com/Natalia970970.png') center center
-    no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/Natalia970970.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card3 {
-  background: url('https://github.com/pos1t1v41k.png') center center no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/pos1t1v41k.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card4 {
-  background: url('https://github.com/roma-cwby.png') center center no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/roma-cwby.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card5 {
-  background: url('https://github.com/Serge-Moskalenko.png') center center
-    no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/Serge-Moskalenko.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card6 {
-  background: url('https://github.com/notoriousronin.png') center center
-    no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/notoriousronin.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card7 {
-  background: url('https://github.com/AlexLupeka.png') center center no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/AlexLupeka.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card8 {
-  background: url('https://github.com//ihorsaievych.png') center center
-    no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com//ihorsaievych.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card9 {
-  background: url('https://github.com/oleksandr-vasylenko.png') center center
-    no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/oleksandr-vasylenko.png') center
-      no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card10 {
-  background: url('https://github.com/botaniq.png') center center no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/botaniq.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card11 {
-  background: url('https://github.com/AnnaYeremenko.png') center center
-    no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/AnnaYeremenko.png') center no-repeat;
-    background-size: 300px;
-  }
-}
-.people__card12 {
-  background: url('https://github.com/Urichcool.png') center center no-repeat;
-  background-size: 250px;
-  &:hover {
-    background: url('https://github.com/Urichcool.png') center no-repeat;
-    background-size: 300px;
-  }
-}
+
