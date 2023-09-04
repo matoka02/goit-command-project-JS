@@ -6,7 +6,7 @@ import { stickyHeader } from './js/sticky-header';
 import { renderCards } from './js/renderCards';
 import trailer from './js/film-trailer';
 import { showModal } from './js/film-modal';
-import { noInfo, ruAlert, ruDelete, spinner, spinnerRemove } from './js/notifications';
+import { noInfo, spinner, spinnerRemove } from './js/notifications';
 import { onOpenTeamModal } from './js/team-modal';
 
 export const refs = {
