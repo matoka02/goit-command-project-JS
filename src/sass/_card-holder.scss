@@ -7,8 +7,6 @@
   }
 }
 
-
-
 .card-holder {
   display: flex;
   flex-direction: column;
@@ -20,7 +18,6 @@
     grid-row-gap: 2em;
     grid-template-columns: repeat(2, 1fr);
   }
-
   @media screen and(min-width: 1280px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -93,6 +90,7 @@
   line-height: 1.17;
   text-transform: uppercase;
   text-align: center;
+  
   color: #ff6b01;
 
   @media screen and (min-width: 768px) {
