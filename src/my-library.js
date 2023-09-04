@@ -3,7 +3,7 @@ import { onQueueBtn, onWatchedBtn } from './js/btnWatchedQueue';
 import { onSubmitScroll } from './js/onSubmit';
 import { showModal } from './js/film-modal';
 import trailer from './js/film-trailer';
-// import { switcher} from './js/switcher';
+import { switcher} from './js/switcher';
 import { spinner, spinnerRemove } from './js/notifications';
 import { onOpenTeamModal } from './js/team-modal';
 
