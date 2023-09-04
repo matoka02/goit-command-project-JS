@@ -7,16 +7,21 @@
    bottom: 40px;
    right: 20px;
    z-index: 10;
+<<<<<<< Updated upstream
    border: none;
    outline: none;
    color: #f16609;
    background-color: rgba(221, 221, 221, 0.532);
    cursor: pointer;
    border-radius: 50%;
+=======
+      
+>>>>>>> Stashed changes
    display: flex;
    justify-content: center;
    align-items: center;
 
+<<<<<<< Updated upstream
    @media screen and (min-width: 768px) {
       width: 50px;
       height: 50px;
@@ -29,6 +34,29 @@
       bottom: 100px;
       right: 40px;
    }
+=======
+   border: none;
+   border-radius: 50%; 
+   outline: none;
+   cursor: pointer;
+
+   
+   color: #f16609;
+   background-color: rgba(221, 221, 221, 0.532);
+
+   @media screen and (min-width: 768px){
+   width: 50px;
+   height: 50px;
+   bottom: 80px;
+   right: 1px;
+   }
+   @media screen and (min-width: 1280px) {
+   width: 60px;
+   height: 60px;
+   bottom: 100px;
+   right: 40px;
+   }  
+>>>>>>> Stashed changes
 }
 
 .btn_top_icon {
