@@ -18,9 +18,6 @@ export const refs = {
   // container: document.querySelector('.card-container.container'),
   stickyHeader: document.querySelector('.js-home-header__sticky'),
   footerLink: document.querySelector('.footer__link'),
-  ruBackdrop: document.querySelector('[data-backdrop]'),
-  ruCorablBanner: document.querySelector('.card-holder__banner__ru__is-hidden'),
-  prytulaBannerTab: document.querySelector('.prytula-baner-tab'),
 };
 
 export const apiService = new ApiService();

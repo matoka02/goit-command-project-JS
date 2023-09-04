@@ -14,23 +14,7 @@ export function renderCards({ data }) {
         </button>
       </a>
     </li>`;
-  }).join('') +
-    `<li class="film__item__prytula">
-    <a onclick="event.stopPropagation()" href="https://prytulafoundation.org/" target="blank" class="film__item__prytula__link">
-      <h2>SUPPORT UKRAINE</h2>
-      <p>Support the Defense Forces of Ukraine</p>
-    </a>
-  </li>`;
-
-  refs.prytulaBannerTab.innerHTML = `
-  <div class="film__item__prytula__tab">
-    <a onclick="event.stopPropagation()" href="https://prytulafoundation.org/" target="blank" class="film__item__prytula__tab__link">
-      <a onclick="event.stopPropagation()" href="https://prytulafoundation.org/" target="blank">
-        <h2>SUPPORT UKRAINE</h2>
-        <p>Support the Defense Forces of Ukraine</p>
-      </a>
-    </a>
-  </div>`;
+  }).join('');
 
   onSubmitScroll();
 
