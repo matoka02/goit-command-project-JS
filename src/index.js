@@ -1,7 +1,7 @@
 import ApiService from './js/API';
 import { onSubmit, onSubmitScroll } from './js/onSubmit';
 import { onScroll } from './js/onScroll';
-// import { switcher } from './js/switcher';
+import { switcher } from './js/switcher';
 import { stickyHeader } from './js/sticky-header';
 import { renderCards } from './js/renderCards';
 import trailer from './js/film-trailer';
