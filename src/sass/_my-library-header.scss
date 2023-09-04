@@ -10,10 +10,10 @@
   height: 230px;
   //background-color: rgba(0, 0, 0, 0.56);
   background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-    url('../images/hero-my-library/cinema-hall-background-mobile.jpg');
+    url('../images/hero/Img-library-mobile-@1x.jpg');
   @include retina {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-      url('../images/hero-my-library/cinema-hall-background-mobile-2x.jpg');
+      url('../images/hero/Img-library-mobile-@2x.jpg');
   }
 
   @include mobile {
@@ -22,24 +22,24 @@
 
   @include tablet {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-      url('../images/hero-my-library/cinema-hall-background-tablet.jpg');
+      url('../images/hero/Img-library-tablet-@1x.jpg');
     @include retina {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.56),
           rgba(0, 0, 0, 0.56)
         ),
-        url('../images/hero-my-library/cinema-hall-background-tablet-2x.jpg');
+        url('../images/hero/Img-library-tablet-@2x.jpg');
     }
   }
   @include desktop {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-      url('../images/hero-my-library/cinema-hall-background-desktop.jpg');
+      url('../images/hero/Img-library-desktop-@1x.jpg');
     @include retina {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.56),
           rgba(0, 0, 0, 0.56)
         ),
-        url('../images/hero-my-library/cinema-hall-background-desktop-2x.jpg');
+        url('../images/hero/Img-home-desktop-@2x.png');
     }
   }
   background-repeat: no-repeat;

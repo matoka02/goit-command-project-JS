@@ -1,6 +1,4 @@
-
 .btn_top {
-   
    margin-left: auto;
    //margin-right: auto;
    width: 40px;
@@ -14,32 +12,29 @@
    color: #f16609;
    background-color: rgba(221, 221, 221, 0.532);
    cursor: pointer;
-   border-radius: 50%; 
+   border-radius: 50%;
    display: flex;
    justify-content: center;
    align-items: center;
-   @media screen and (min-width: 768px){
-   width: 50px;
-   height: 50px;
-   bottom: 80px;
-   right: 1px;
+
+   @media screen and (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+      bottom: 80px;
+      right: 1px;
    }
    @media screen and (min-width: 1280px) {
-   width: 60px;
-   height: 60px;
-   bottom: 100px;
-   right: 40px;
+      width: 60px;
+      height: 60px;
+      bottom: 100px;
+      right: 40px;
    }
-      
-   
 }
 
-
-
 .btn_top_icon {
-   
    width: 20px;
    height: 20px;
+
    @media screen and (min-width:768px) {
       width: 30px;
       height: 30px;
