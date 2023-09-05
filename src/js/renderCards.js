@@ -43,17 +43,19 @@ const genreIdName = [
   { id: 37, name: "Western" },
 ];
 
-export function getGenresByID(genreId) {
+export function getGenresByID(genreIds) {
   const newArr = [];
   genreIdName.map(genre => {
-    for (const id in genreId) {
-      if (genre.id === id) newArr.push(genre.name);
+    for (const id of genreIds) {
+      if (genre.id === id) {
+        newArr.push(genre.name)
+      };
     }
   });
   if (newArr.length >= 2) {
     const sliceArr = newArr.slice(0, 2);
     sliceArr[2] = 'Other';
-    return sliceArr;
+    return sliceArr.join(', ');
   } else {
     return 'Other';
   }

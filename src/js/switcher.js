@@ -9,6 +9,7 @@ document.querySelector('.themetoggle').addEventListener('click', evt => {
     localStorage.removeItem('settings');
   } else {
     localStorage.setItem('settings', 'dark');
+    // addDarkClassToHTML();
   }
   addDarkClassToHTML();
 });
