@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default class ApiService {
+class ApiService {
   constructor() {
     this.url = 'https://api.themoviedb.org/3/';
     this.key = 'b8b4ca8ae31738ae90c3cb58e4b03190';
@@ -93,3 +93,5 @@ export default class ApiService {
     this.page = 1
   }
 };
+
+export default ApiService;

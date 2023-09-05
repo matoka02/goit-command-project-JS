@@ -1,7 +1,7 @@
 import { refs } from '../my-library';
 import { getMarkupImgPoster, getShortName, getGenresByID, getYear } from './renderCards';
 
-export function renderCards(obj) {
+function renderCards(obj) {
   refs.cardHolderLibrary.innerHTML = obj.map(({ id, poster_path, name, title, release_date, genres, original_language }) => {
     return `
     <li class="film__item" id="${id}">
@@ -15,3 +15,5 @@ export function renderCards(obj) {
     </li>`;
   }).join('');
 };
+
+export default renderCards;

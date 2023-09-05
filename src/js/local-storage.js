@@ -4,7 +4,7 @@ const MOVIES_QUEUE = 'movies-queue';
 const MOVIES_WATCHED = 'movies-watched';
 
 // function launches when the movie modal opens functioin "showModal()" from film-modal.js
-export function locStorage(data) {
+function locStorage(data) {
   // variables declaration for further local storage content
   const moviesWatched = JSON.parse(localStorage.getItem(MOVIES_WATCHED)) || [];
   const moviesQueue = JSON.parse(localStorage.getItem(MOVIES_QUEUE)) || [];
@@ -84,3 +84,5 @@ export function locStorage(data) {
   };
   
 };
+
+export default locStorage;

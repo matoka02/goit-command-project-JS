@@ -1,8 +1,8 @@
 import ApiServiceLibrary from './js/API';
 import { onQueueBtn, onWatchedBtn } from './js/btnWatchedQueue';
 import { onSubmitScroll } from './js/onSubmit';
-import { showModal } from './js/film-modal';
 import trailer from './js/film-trailer';
+import showModal from './js/film-modal';
 import { switcher} from './js/switcher';
 import { spinner, spinnerRemove } from './js/notifications';
 import { onOpenTeamModal } from './js/team-modal';
@@ -17,7 +17,7 @@ export const refs = {
   ),
   watchedBtn: document.querySelector('.js-watched'),
   queuedBtn: document.querySelector('.js-queue'),
-  //кнопки для свернутого хедера
+  // buttons for collapsed header
   watchedBtnSticky: document.querySelector('.js-watched__sticky'),
   queuedBtnSticky: document.querySelector('.js-queue__sticky'),
 
@@ -40,23 +40,23 @@ refs.cardHolderLibrary.addEventListener('click', onCardClick);
 refs.watchedBtn.addEventListener('click', onWatched);
 refs.queuedBtn.addEventListener('click', onQueued);
 refs.movieModal.addEventListener('click', onModalClick);
-//для свернутого хедера
+// collapsed header
 refs.watchedBtnSticky.addEventListener('click', onWatched);
 refs.queuedBtnSticky.addEventListener('click', onQueued);
-
+// regular header
 refs.pagination.addEventListener('click', onPagination);
 refs.footerLink.addEventListener('click', onOpenTeamModal);
 
-// Початкове завантаження
+// initial download
 onWatchedBtn();
 
 function onWatched(evt) {
   console.log(evt.target);
   if (evt.target.classList.contains('my-library-header__button--current')) return;
-  //для обычного хедера
+  // for collapsed header
   refs.watchedBtn.classList.add('my-library-header__button--current');
   refs.queuedBtn.classList.remove('my-library-header__button--current');
-  //для свернутого хедера
+  // for regular header
   refs.watchedBtnSticky.classList.add('my-library-header__button--current');
   refs.queuedBtnSticky.classList.remove('my-library-header__button--current');
 
@@ -96,7 +96,7 @@ function onCardClick(evt) {
   });
 };
 
-// Перезавантаження сторінки бібліотеки після видалення фільму
+// reloading the library page after deleting a movie
 function onModalClick(evt) {
   const currentPagination = document.querySelector('.pagination__item--current');
 
@@ -114,7 +114,7 @@ function onModalClick(evt) {
 
 };
 
-// Відстежування пагінації
+// Pagination tracking
 function onPagination(evt) {
   if (evt.target === evt.currentTarget || evt.target.nodeName === 'UL') return;
 
@@ -122,7 +122,7 @@ function onPagination(evt) {
 
   if (evt.target.nodeName === 'svg' || evt.target.nodeName === 'BUTTON' || evt.target.nodeName === 'path') {
 
-    // по левой/правой кнопке
+    // by left/right button
     if (evt.target.closest('button').classList.contains('pagination__left-btn') && evt.target.closest('button').classList.contains('on')) {
       id = Number(currentPagination.id) - 1;
     } else if (evt.target.closest('button').classList.contains('pagination__right-btn') && evt.target.closest('button').classList.contains('on')) {
@@ -131,7 +131,7 @@ function onPagination(evt) {
 
   } else {
 
-    // по количеству в списке
+    // by quantity in the list
     if (!isNaN(evt.target.closest('li').id)) {
       id = Number(evt.target.closest('li').id);
     } else if (evt.target.closest('li').id === '+') {
@@ -149,11 +149,3 @@ function onPagination(evt) {
     onQueueBtn(id);
   };
 }
-
-
-
-
-
-
-
-

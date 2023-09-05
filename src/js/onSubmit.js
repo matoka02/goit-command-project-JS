@@ -7,20 +7,20 @@ const apiService = new ApiService();
 
 let value = null;
 
-export function onSubmit(evt) {
-  // const { target } = evt;
+function onSubmit(evt) {
+  const searchValue = evt.target.elements[0].value.trim();
   evt.preventDefault();
-  if (value === evt.target.elements[0].value.trim()) {
-    secondRequest(evt.target.elements[0].value.trim());
+  if (value === searchValue) {
+    secondRequest(searchValue);
     return;
   };
 
-  if (evt.target.elements[0].value.trim() === '') {
+  if (searchValue === '') {
     warning();
     return;
   };
 
-  apiService.query = evt.target.elements[0].value.trim();
+  apiService.query = searchValue;
   apiService.resetPage();
   spinner();
   apiService.fetch().then(data => {
@@ -29,18 +29,18 @@ export function onSubmit(evt) {
       spinnerRemove();
       return;
     } else {
-      success(data.data.total_results, evt.target.elements[0].value.trim());
+      success(data.data.total_results, searchValue);
       renderCards(data);
       spinnerRemove();
     }
   });
 
-  value = evt.target.elements[0].value.trim();
+  value = searchValue;
 
-  if (evt.target.elements[0].value.trim()) return;
+  if (searchValue) return;
 
   onSubmitScroll();
-  apiService.query = evt.target.elements[0].value.trim();
+  apiService.query = searchValue;
 
   apiService.fetch().then(data => {
     refs.cardHolder.innerHTML = '';
@@ -49,10 +49,12 @@ export function onSubmit(evt) {
 
 };
 
-export function onSubmitScroll() {
+function onSubmitScroll() {
   window.scroll({
     top: 0,
     left: 0,
     behavior: 'smooth',
   });
 };
+
+export { onSubmit, onSubmitScroll };
