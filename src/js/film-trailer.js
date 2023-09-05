@@ -9,7 +9,7 @@ const trailerBackdrop = document.querySelector('.js-movie-modal-mask');
 async function showTrailer(id) {
   let trailer = null;
 
-  // получение данных
+  // get data
   try {
     spinner();
     api.movieId = id;
@@ -22,22 +22,22 @@ async function showTrailer(id) {
 
   let officialTrailer = [];
 
-  // фильтрация по ключевому слову
+  // filtering by keyword
   if (trailer?.data?.results?.length) {
     officialTrailer = trailer.data.results.filter(item=>item.name.toLowerCase().includes('trailer'));
   };
 
-  // рендер трейлера в зависимости от его наличия
+  // trailer render depending on its availability
   if (officialTrailer.length && officialTrailer[0].key) {
     return renderPlayer(officialTrailer[0].key);
   };
 
-  // рендер любого найденного видео
+  // render any found video
   if (trailer?.data?.results?.[0]?.key) {
     return renderPlayer(trailer.data.results[0].key);
   };  
 
-  // проверки не сработали, рендер ошибки
+  // checks didn't work, render error
   renderPlayer();
 };
 

@@ -1,17 +1,17 @@
 import { spinner, spinnerRemove } from './notifications';
-import { renderCards } from './renderCardsMyLibrary';
+import renderCards from './renderCardsMyLibrary';
 import { getPagination } from './pagination';
 
 const WATCHED = 'movies-watched';
 const QUEUE = 'movies-queue';
 
-// Заглушки пустой страницы
+// Blank page stubs
 const img = document.querySelector('.empty__page');
 const text = document.querySelector('.empty__page-text');
 let currentPage = 1;
 const libPageSize = 18;
 
-export function onWatchedBtn(page = 0) {
+function onWatchedBtn(page = 0) {
   if (page) { currentPage = page };
 
   img.classList.add('is-hidden');
@@ -28,7 +28,7 @@ export function onWatchedBtn(page = 0) {
   }
 };
 
-export function onQueueBtn(page = 0) {
+function onQueueBtn(page = 0) {
   if (page) { currentPage = page };
 
   img.classList.add('is-hidden');
@@ -71,3 +71,5 @@ function calcLibSize(arr) {
 
   getPagination(currentPage, lastPage, true)
 };
+
+export { onWatchedBtn, onQueueBtn };

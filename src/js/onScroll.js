@@ -4,7 +4,7 @@ import { renderCards } from './renderCards';
 
 const apiService = new ApiService();
 
-export function onScroll() {
+function onScroll() {
   const position = document.documentElement.getBoundingClientRect();
   const userPort = document.documentElement.clientHeight + 2000;
 
@@ -19,3 +19,5 @@ export function onScroll() {
     apiService.fetch().then(data=>{ renderCards(data) });
   };
 };
+
+export default onScroll;

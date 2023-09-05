@@ -1,4 +1,4 @@
-// import apiServise from './API';
+// import apiService from './API';
 
 // export async function clickOnMovie(evt) {
 //   evt.preventDefault();
@@ -7,7 +7,7 @@
 //     return;
 //     }
   
-//     apiServise.movieId = evt.path[2].id
+//     apiService.movieId = evt.path[2].id
 
-//     apiServise.fetchId().then(console.log);
+//     apiService.fetchId().then(console.log);
 // };

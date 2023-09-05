@@ -2,7 +2,7 @@ import { refs } from '../index';
 import { getPagination } from './pagination';
 import { onSubmitScroll } from './onSubmit';
 
-export function renderCards({ data }) {
+function renderCards({ data }) {
   refs.cardHolder.innerHTML = data.results.map(({ id, poster_path, name, title, release_date, genre_ids, original_language, }) => {
     return `
     <li class="film__item" id="${id}">
@@ -43,7 +43,7 @@ const genreIdName = [
   { id: 37, name: "Western" },
 ];
 
-export function getGenresByID(genreIds) {
+function getGenresByID(genreIds) {
   const newArr = [];
   genreIdName.map(genre => {
     for (const id of genreIds) {
@@ -61,7 +61,7 @@ export function getGenresByID(genreIds) {
   }
 };
 
-export function getShortName(string) {
+function getShortName(string) {
   if (string) {
     if (string.length >= 32) {
       return string.substr(0, 32) + '...';
@@ -70,7 +70,7 @@ export function getShortName(string) {
   }
 };
 
-export function getYear(date) {
+function getYear(date) {
   return date ? date.split('-')[0] : '2023';
 };
 
@@ -78,7 +78,7 @@ function getPosterPath(path) {
   return `https://www.themoviedb.org/t/p/w500${path}`;
 };
 
-export function getMarkupImgPoster(original_language, poster_path, name, title) {
+function getMarkupImgPoster(original_language, poster_path, name, title) {
   if (poster_path && original_language !== 'ru') {
     return `<img src=" ${getPosterPath(poster_path)}" alt="${name || title}" loading="lazy" />`;
   } else if (original_language === 'ru') {
@@ -86,3 +86,5 @@ export function getMarkupImgPoster(original_language, poster_path, name, title) 
   };
   return ``;
 };
+
+export { renderCards, getGenresByID, getShortName, getYear, getMarkupImgPoster}
