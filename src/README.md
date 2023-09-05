@@ -1,15 +1,15 @@
 # Важливе для проекту
--Виконай проект згідно з [макетом](https://www.figma.com/file/ieXHCTVNre6afLNCW0cDFc/Filmoteka?node-id=0%3A1)
+- Виконай проект згідно з [макетом](https://www.figma.com/file/ieXHCTVNre6afLNCW0cDFc/Filmoteka?node-id=0%3A1)
 
--API з фільмів(потрібно зареєструватися щоб отримати api_key) ( [https://www.themoviedb.org/](https://www.themoviedb.org/) )
+- API з фільмів(потрібно зареєструватися щоб отримати api_key) ( [https://www.themoviedb.org/](https://www.themoviedb.org/) )
 
--Посилання на документацію для запиту на список найпопулярніших фільмів на сьогодні для створення колекції на головній сторінці ( [https://developers.themoviedb.org/3/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending) )
+- Посилання на документацію для запиту на список найпопулярніших фільмів на сьогодні для створення колекції на головній сторінці ( [https://developers.themoviedb.org/3/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending) )
 
--Посилання на документацію для запиту фільму за ключовим словом на головній сторінці ( [https://developers.themoviedb.org/3/search/search-movies](https://developers.themoviedb.org/3/search/search-movies) )
+- Посилання на документацію для запиту фільму за ключовим словом на головній сторінці ( [https://developers.themoviedb.org/3/search/search-movies](https://developers.themoviedb.org/3/search/search-movies) )
 
--Посилання на документацію для запиту повної інформації про кінофільм для сторінки кінофільму ( [https://developers.themoviedb.org/3/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) )
+- Посилання на документацію для запиту повної інформації про кінофільм для сторінки кінофільму ( [https://developers.themoviedb.org/3/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) )
 
--Посилання на документацію для запиту повної інформації про можливий трейлер на YouTube ( [https://developers.themoviedb.org/3/movies/get-movie-videos](https://developers.themoviedb.org/3/movies/get-movie-videos) )
+- Посилання на документацію для запиту повної інформації про можливий трейлер на YouTube ( [https://developers.themoviedb.org/3/movies/get-movie-videos](https://developers.themoviedb.org/3/movies/get-movie-videos) )
 
 
 # СТАНДАРТНА ВЕРСІЯ
